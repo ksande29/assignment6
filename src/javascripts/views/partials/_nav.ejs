@@ -1,0 +1,35 @@
+<nav class="navbar">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        Kate's Project Home
+      </a>
+      <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </div>
+    <div id="navbarMenuHeroA" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="/courses">
+          Courses
+        </a>
+        <a class="navbar-item" href="/about">
+          About
+        </a>
+        <a class="navbar-item" href="/contact">
+          Contact
+        </a>
+      </div>
+      <div class="navbar-end">
+        <% if (signedIn) { %>
+          <a id="_sign_user_out" class="navbar-item" href="">Sign Out</a>
+        <% } else { %>
+          <a class="navbar-item" href="/signin">Sign In</a>
+          <a class="navbar-item" href="/signup">Sign Up</a>
+        <% } %>
+      </div>
+    </div>
+  </div>
+</nav>
